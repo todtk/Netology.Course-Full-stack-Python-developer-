@@ -8,7 +8,6 @@ def flat_generator(list_of_lists: list) -> any:
         for item in elem:
             yield item
 
-
 def test_2() -> None:
 
     list_of_lists_1 = [

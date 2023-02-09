@@ -3,24 +3,33 @@
 
 class FlatIterator:
 
-    def __init__(self, list_of_list: list) -> None:
-        self.main_list = list_of_list
+    def __init__(self, list_of_lists: list) -> None:
+        self.list_of_lists = list_of_lists
 
     def __iter__(self):
-        self.main_cursor = 0
-        self.sub_cursor = 0
+        self.outer_list_cursor = 0
+        self.inner_list_cursor = 0
         return self
 
-    def __next__(self) -> any:
-        for sub_list in self.main_list[self.main_cursor:]:
-            for item in sub_list[self.sub_cursor:]:
-                if len(sub_list) != self.sub_cursor + 1:
-                    self.sub_cursor += 1
-                else:
-                    self.main_cursor += 1
-                    self.sub_cursor = 0
-                return item
-                
+    def __next__(self) -> str | bool | None:
+
+        if self.list_of_lists[self.outer_list_cursor:]:
+
+            for inner_list in self.list_of_lists[self.outer_list_cursor:]:
+
+                for item in inner_list[self.inner_list_cursor:]:
+
+                    if len(inner_list) != self.inner_list_cursor + 1:
+                        self.inner_list_cursor += 1
+                    else:
+                        self.outer_list_cursor += 1
+                        self.inner_list_cursor = 0
+                        
+                    return item
+
+        else:
+            raise StopIteration   
+
 
 def test_1() -> None:
 

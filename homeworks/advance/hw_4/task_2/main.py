@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import types
+from typing import Generator
 
 
-def flat_generator(list_of_lists: list) -> any:
+def flat_generator(list_of_lists: list) -> Generator[str, bool, int]:
     for elem in list_of_lists:
         for item in elem:
             yield item

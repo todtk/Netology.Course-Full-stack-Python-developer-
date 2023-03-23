@@ -11,11 +11,14 @@ def logger(path):
         datetime_ = datetime.strftime(datetime.now(), r'%d/%m/%y %H:%M:%S')
 
         def new_function(*args, **kwargs):
+
             result = old_function(*args, **kwargs)
             text = f"{datetime_}, func: {old_function.__name__}, args: {args, kwargs}, result: {result}\n"
 
             with open(path, "a") as file:
                 file.write(text)
+
+            return result
 
         return new_function
 

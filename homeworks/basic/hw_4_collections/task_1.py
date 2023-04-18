@@ -11,8 +11,8 @@ geo_logs = [
     {'visit7': ['Тула', 'Россия']},
     {'visit8': ['Тула', 'Россия']},
     {'visit9': ['Курск', 'Россия']},
-    {'visit10': ['Архангельск', 'Россия']}
-]
+    {'visit10': ['Архангельск', 'Россия']}]
+
 
 def custom_filter(visit_list: list, target_country: str = 'Россия') -> list:
 

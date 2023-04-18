@@ -6,11 +6,11 @@ ids = {'user1': [213, 213, 213, 15, 213],
        'user3': [213, 98, 98, 35]}
 
 
-def custom_filter(ids_list: dict) -> list:
+def ids_filter(ids: dict) -> list:
 
     result = []
 
-    for key in ids_list.keys():
+    for key in ids.keys():
         for id in ids.get(key):
             if id not in result:
                 result.append(id)

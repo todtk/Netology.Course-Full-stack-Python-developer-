@@ -16,10 +16,10 @@ geo_logs = [
 
 def custom_filter(visit_list: list, target_country: str = 'Россия') -> list:
 
-    new_list = []
+    result = []
 
     for visit in visit_list:
         if target_country in list(visit.values())[0]:
-            new_list.append(visit)
+            result.append(visit)
 
-    return new_list
+    return result

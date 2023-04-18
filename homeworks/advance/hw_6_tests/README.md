@@ -1,7 +1,7 @@
 # Домашнее задание к лекции 4.«Tests»
 
 ### Задача №1 unit-tests
-Из курса «Python: программирование на каждый день и сверхбыстрое прототипирование» нужно написать тесты на любые 3 задания из [Лекции 4](https://github.com/netology-code/py-homeworks-basic/tree/master/4.collections).
+Из курса «Python: программирование на каждый день и сверхбыстрое прототипирование» нужно написать тесты на любые 3 задания из [Лекции 4](https://github.com/todtk/Netology.Course_Full.Stack.Python.Developer/tree/main/homeworks/basic/hw_4_collections).
 Необходимо использовать своё решение домашнего задания.
 
 * При написании тестов не забывайте использовать параметризацию.

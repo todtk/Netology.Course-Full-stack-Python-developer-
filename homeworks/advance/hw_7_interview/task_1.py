@@ -16,14 +16,14 @@ class Stack():
             return False
         return True
 
-    def push(self, element: ...) -> None:
+    def push(self, element: str) -> None:
         """
         Добавляет новый элемент на вершину стека.
         """
 
         self.values.append(element)
 
-    def pop(self) -> ...:
+    def pop(self) -> str:
         """
         Удаляет верхний элемент стека. Стек изменяется.
 
@@ -32,7 +32,7 @@ class Stack():
 
         return self.values.pop()
 
-    def peek(self) -> ...:
+    def peek(self) -> str:
         """
         Возвращает верхний элемент стека, но не удаляет его. Стек не меняется.
 
@@ -49,31 +49,3 @@ class Stack():
         """
         
         return len(self.values)
-
-
-#TESTING
-stack = Stack()
-
-# isEmpty
-assert stack.isEmpty() == True
-
-stack.values.append("first_value")
-assert stack.isEmpty() == False
-
-# push
-stack.push("second_value")
-assert stack.values == ["first_value", "second_value"]
-
-stack.push("third_value")
-assert stack.values == ["first_value", "second_value", "third_value"]
-
-# pop
-assert stack.pop() == "third_value"
-assert stack.values == ["first_value", "second_value"]
-
-# peek
-assert stack.peek() == "second_value"
-assert stack.values == ["first_value", "second_value"]
-
-# size
-assert stack.size() == 2

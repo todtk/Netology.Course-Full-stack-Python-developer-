@@ -1,1 +1,1 @@
-![banner](https://raw.githubusercontent.com/todtk/netology/main/certificate.png)
+![banner](https://raw.githubusercontent.com/todtk/netology/main/git/certificate.png)

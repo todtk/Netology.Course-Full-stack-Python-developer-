@@ -1,16 +1,16 @@
 """
-ASGI config for requests_templates project.
+ASGI config for recipes project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/asgi/
+https://docs.djangoproject.com/en/3.2/howto/deployment/asgi/
 """
 
 import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'requests_templates.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'recipes.settings')
 
 application = get_asgi_application()

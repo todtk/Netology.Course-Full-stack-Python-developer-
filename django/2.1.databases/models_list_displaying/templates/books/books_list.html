@@ -18,13 +18,14 @@
             {% endfor %}
         </div>
         {% if page.has_previous %}
-            <a class="button button-primary" href="http://127.0.0.1:8000/books/{% get_page dates page.previous_page_number %}/"> < </a>
-        {% endif %}
-        {% if page != None %}
-            <a class="button disabled" href="">{% get_page dates page.number %}</a>
+            <a class="button button-primary" href="/books/{% get_page pages page.previous_page_number %}/">
+                < {% get_page pages page.previous_page_number %}
+            </a>
         {% endif %}
         {% if page.has_next %}
-            <a class="button button-primary" href="http://127.0.0.1:8000/books/{% get_page dates page.next_page_number %}/"> > </a>
+            <a class="button button-primary" href="/books/{% get_page pages page.next_page_number %}/">
+                {% get_page pages page.next_page_number %} >
+            </a>
         {% endif %}
     </div>
 {% endblock %}

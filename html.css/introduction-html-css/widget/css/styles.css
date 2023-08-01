@@ -23,3 +23,12 @@ body {
   width: 180px;
   flex: none;
 }
+
+.card-content {
+  margin-left: 30px;
+}
+
+.card-name {
+  margin-top: 0;
+  font-size: 24px;
+}

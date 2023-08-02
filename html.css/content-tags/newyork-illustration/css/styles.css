@@ -7,7 +7,39 @@ a {
   color: #349bdf;
 }
 
+p {
+  line-height: 26px;
+}
+
+ul {
+  line-height: 22px;
+}
+
 figure {
   width: 220px;
   text-align: center;
+  padding: 18px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #e0e4e8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+figure figcaption {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.figure-cathedral {
+  float: right;
+  margin-left: 40px;
+  margin-right: 0px;
+
+}
+
+.figure-nasdaq {
+  float: left;
+  margin-left: 0px;
+  margin-right: 40px;
 }

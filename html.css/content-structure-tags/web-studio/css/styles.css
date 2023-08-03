@@ -14,15 +14,21 @@ p {
 }
 
 .services {
+	width: 1260px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	flex-direction: row;
 	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 .card {
+	width: 420px;
 	background-image: url("https://netology-code.github.io/html-2-homeworks/content-structure-tags/web-studio/img/creative-idea.svg");
 	background-repeat: no-repeat;
 	background-size: 96px;
@@ -31,6 +37,8 @@ p {
 	border-left: 1px solid transparent;
 	border-right: 1px solid transparent;
 	border-bottom: 1px solid rgba(179, 184, 236, 0.5);
+
+	padding: 160px 30px 30px 30px;
 }
 
 .card:nth-child(2) { 

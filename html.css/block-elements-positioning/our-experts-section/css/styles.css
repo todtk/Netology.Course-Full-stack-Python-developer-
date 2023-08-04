@@ -23,6 +23,18 @@ body {
 .speakers {
 	margin-top: 50px;
 	border: 3px solid rgba(179, 184, 236, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.speaker:nth-of-type(even) {
+	background-color: #f0f1fb;
+}
+
+.speaker:nth-last-of-type(-n+3) {
+	border-top: 3px solid;
+	border-color: #d9dbf5;
 }
 
 .speaker {

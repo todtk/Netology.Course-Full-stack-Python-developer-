@@ -32,7 +32,9 @@ body {
 	background-color: #f0f1fb;
 }
 
-.speaker:nth-last-of-type(-n+3) {
+/*.speaker:nth-last-of-type(-n+3)*/
+/*можно писать - .speaаker:nth-child(n+4)*/
+.speaаker:nth-child(n+4) {
 	border-top: 3px solid;
 	border-color: #d9dbf5;
 }

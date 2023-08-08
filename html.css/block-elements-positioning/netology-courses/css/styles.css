@@ -2,10 +2,12 @@
   width: 960px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0px;
-  
-  display: flex;
-  flex-direction: column;
+}
+
+/*лучшим решением для соответствия с макетом будет удаление марджина у первого элемента курсов*/
+/*.courses:first-child*/
+.course:nth-of-type(1) {
+  margin: 0px;
 }
 
 .course {

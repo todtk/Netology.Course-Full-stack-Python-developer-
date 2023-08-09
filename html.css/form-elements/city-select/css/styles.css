@@ -11,10 +11,16 @@
   
   border: 1px solid #cbd1d4;
   background-color: #f9f9f9;
-  
+  background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5px) center;
+
   font-size: 14px;
   font-family: Arial,sans-serif;
   color: #333333;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .select:focus {
@@ -22,12 +28,31 @@
   outline-offset: 4px;
 }
 
+.checkbox {
+  display: none;
+}
+
 .checkbox-text {
   display: inline-block;
 }
 
 .checkbox-text::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 8px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url(https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/checkbox-unchecked.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+
+.checkbox:checked ~ .checkbox-text::before {
+  background-image: url(https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/checkbox-checked.svg);
 }
 
 .checkbox:focus ~ .checkbox-text::before {

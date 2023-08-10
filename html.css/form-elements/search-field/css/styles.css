@@ -1,17 +1,35 @@
+.page {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+.search-group{
+  display: inline-block;
+  
+  padding-top: 5px;
+  padding-right: 35px;
+
+  font-weight: bold;
+  text-align: right;
+}
+
 .field {
+  display: inline-block;
+
   box-sizing: border-box;
   width: 485px;
   border: 2px solid #dadada;
   padding: 10px 25px 10px 65px;
   margin: 0;
   
-  display: inline-block;
-  vertical-align: middle;
-  
   font-size: 14px;
   height: 55px;
   border-radius: 25px;
+  background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/search-field/img/search.svg");
   background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 25px center;
 }
 
 .field:focus {
